@@ -9,7 +9,7 @@
 */
 
 body{
-	background-image: url(mooning2.png);
+	background-image: url('../Imagens/mooning2.png');
 	margin: 0;
 }
 
@@ -44,7 +44,7 @@ body{
 }
 
 #fundo{
-	background: url('foto.jpg') no-repeat fixed top;
+	background: url('../Imagens/foto.jpg') no-repeat fixed top;
 	width: 100%;
 	height: 80%;
 	position: absolute;
