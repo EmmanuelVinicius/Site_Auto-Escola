@@ -97,22 +97,22 @@ body{
 	margin: 3%;
 	text-align: justify;
 }
-/*
+
 .coluna a {
 	text-decoration: none;
 	padding: 12px 20px;
 	border-radius: 4px;
-	border: 1px solid black;
-    color: black;
+	border: 1px solid #464308;
+    color: #5F5C27;
     cursor: pointer;
 }.coluna a:hover{
     transition: all .3s ease;
-    background-color: rgba(0,0,0,.2);
+    background-color: rgba(70,67,8,.2);
     color: white;
 }.coluna a:active{
-    background-color: rgba(0,0,0,.4);
+    background-color: rgba(70,67,8,.4);
 }
-*/
+
 #map {
 	width: 100%;
     height: 500px;
@@ -244,42 +244,6 @@ fieldset{
     cursor: pointer;
 }
 
-
-#enviar {
-	text-decoration: none;
-	padding: 12px 20px;
-	border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    background-color: #009933;
-    border: none;
-    float: right;
-    margin: -40px 0 40px 0;
-}#enviar:hover{
-    transition: all .3s ease;
-    background-color: #00e64d;
-    color: white;
-}#enviar:active{
-    background-color: #006622;
-}
-
-#limpar {
-	text-decoration: none;
-	padding: 9px 17px;
-	border-radius: 4px;
-    color: white;
-    cursor: pointer;
-    background-color: #cc0000;
-    border: none;
-    float: right;
-    margin: -34px 5px 40px 0;
-}#limpar:hover{
-    transition: all .3s ease;
-    background-color: #ff0000;
-    color: white;
-}#limpar:active{
-    background-color: #990000;
-}
 .msgSuccess{
 	width: auto;
 	height: 50px;
@@ -301,6 +265,25 @@ fieldset{
 	border-radius: 5px;
 	text-align: center;
 }
+
+#enviar {
+	text-decoration: none;
+	padding: 12px 20px;
+	border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    background-color: #006622;
+    border: none;
+    float: right;
+    margin: -40px 10px 40px 0;
+}#enviar:hover{
+    transition: all .3s ease;
+    background-color: #009933;
+    color: white;
+}#enviar:active{
+    background-color: #0e64;
+}
+
 footer{
 	padding: 1% 0;
 	background-color: #081106;
