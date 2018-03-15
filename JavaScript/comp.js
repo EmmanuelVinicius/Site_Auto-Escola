@@ -1,6 +1,6 @@
 $(".scrollSuave").click(function(){        
 	$('html,body').animate({
-		scrollTop:$(this.hash).offset().top}, 2000);
+		scrollTop:$(this.hash).offset().top}, 1000);
 });
 
 function initMap() {
@@ -9,19 +9,48 @@ function initMap() {
 	marker = new google.maps.Marker({position: uluru,map: map});
 }
 
+function boxTop(idBox) {
+  var boxOffset = $(idBox).offset().top;
+  return boxOffset;
+}
 
+$(document).ready(function() {
+  var $target = $('.anime'),
+      animationClass = 'anime-init',
+      windowHeight = $(window).height(),
+      offset = windowHeight - (windowHeight / 4);
+
+  function animeScroll() {
+    var documentTop = $(document).scrollTop();
+    $target.each(function() {
+      if (documentTop > boxTop(this) - offset) {
+        $(this).addClass(animationClass);
+      } else {
+        $(this).removeClass(animationClass);
+      }
+    });
+  }
+  animeScroll();
+
+  $(document).scroll(function() {
+    animeScroll();
+  });
+});
 
 $("#primH").click(function(){
-	$("#texto").toggle(1000);
-	$("#texto").text("Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt architecto culpa magnam eos expedita tempora. Officiis corporis sit adipisci iste, consectetur! Rem eveniet temporibus impedit. Illo veritatis rem debitis dicta? ipsum dolor sit amet, consectetur a");
+	$("#texto").hide("fast");
+	$("#texto").text(" Os pré-requisitos necessários para iniciar o processo de obtenção da Permissão para Dirigir (PPD), são:\n 	-	Ser penalmente imputável (ter 18 anos completos);\n	-	Saber ler e escrever;\n	-	Possuir documento de identidade ou equivalente; \n	-	Possuir Cadastro de Pessoa Física (CPF); \n	-	Possuir comprovante de residência. \n");
+	$("#texto").show(1000);
 });
 $("#incC").click(function(){
-	$("#texto").toggle(1000);
-	$("#texto").text("dipisicing elit. Iste earum perspiciatis eveniet vel blanditiis voluptas optio et, dolores inventore delectus excepturi, illum molestias error libero nulla cumque tempore aliquid magnam. ipsum dolor sit amet, consectetur adipisicing elit. Asperiores quisquam ex vel, off");
+	$("#texto").hide("fast");
+	$("#texto").text("O condutor deverá fazer a solicitação pelo Centro de formação de Condutores (CFC) ou nas unidades de atendimento. Após os procedimentos, o condutor deverá ");
+	$("#texto").show(1000);
 });
 $("#recic").click(function(){
-	$("#texto").toggle(1000);
-	$("#texto").text("ime error quae quod nobis animi ea. ipsum dolor sit amet, consectetur adipisicing elit. Debitis nulla perferendis ex voluptate assumenda, minus molestias dolorum laudantium dolores excepturi mollitia sit soluta unde cum quae labore corrupti alias expedita? i");
+	$("#texto").hide("fast");
+	$("#texto").text("Esses itens só podem ser concedidos aos motofretistas e mototaxistas após a frequência ao curso obrigatório regulamentado por norma do Departamento Nacional de Trânsito (Denatran).");
+	$("#texto").show(1000);
 });
 function borda(){
 	var x = document.getElementsByClassName('entrada'),
@@ -32,7 +61,7 @@ function borda(){
 			x[i].style.borderColor = 'red';
 			count++;
 		}else{
-			x[i].style.borderColor = '#464308';		
+			x[i].style.borderColor = '#241E4E';		
 		}
 
 		if(count != 0){

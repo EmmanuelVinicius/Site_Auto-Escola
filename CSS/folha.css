@@ -6,20 +6,41 @@
 #464208
 #928E3C
 #DFD419
-*/
+-------
+#471E5B
+#3C2265
+#241E4E
+#222B65
+#1E375B
+-------
+#632581
+#A78DB4
+#241E4E
+#5B533A
+#816225
 
+*/
 body{
 	background-image: url('../Imagens/mooning2.png');
 	margin: 0;
 }
 
+.anime {
+	opacity: 0;
+	transform: translate3D(0px, -50px, 0px);
+}
+.anime-init {
+	opacity: 1;
+	transform: translate3D(0px, 0px, 0px);
+	transition: 1s all ease;
+}
 /*
 	padding: .5% 7%;
 	left: 3.5%;
 	right: 3.5%;
 */
 #tudo{
-	color: #5F5C27;
+	color: #241E4E;
 	position: absolute;
 	font-family: "Nunito";
 
@@ -31,9 +52,9 @@ body{
 	font-weight: 550;
 	text-shadow: -2px 2px 4px black;
 	text-align: center;
-	color: #928B10;
+	color: #471E5B;
 	display: block;
-	border-bottom: 6px double #928B10;
+	border-bottom: 6px double #471E5B;
 }
 
 #cima{
@@ -44,7 +65,7 @@ body{
 }
 
 #fundo{
-	background: url('../Imagens/foto.jpg') no-repeat fixed top;
+	background: url('../Imagens/logog2.jpg') repeat-x fixed top;
 	width: 100%;
 	height: 80%;
 	position: absolute;
@@ -64,22 +85,21 @@ body{
 	text-decoration: none;
 	padding: 3px 20px;
 	border-radius: 4px;
-    background-color: #928E3C;
+    background-color: #222B65;
     color: #fffff6;
     transition: all .3s ease;
 	z-index: 9;
 
 }#menu a:hover{
-    background-color: #928B10;
+    background-color: #471E5B;
 	padding: 12px 20px;
     color: white;
 	z-index: 9;
 }#menu a:active{
-    background-color: #464208;
+    background-color: #241E4E;
 	z-index: 9;
 }
-#row{
-}
+
 #row:after {
     content: "";
     display: table;
@@ -87,7 +107,7 @@ body{
 }
 
 .coluna{
-	width: 26%;
+	width: 24%;
 	padding: 1.3%;
 	margin: 2%;
 	float: left;
@@ -102,8 +122,8 @@ body{
 	text-decoration: none;
 	padding: 12px 20px;
 	border-radius: 4px;
-	border: 1px solid #464308;
-    color: #5F5C27;
+	border: 1px solid #241E4E;
+    color: #3C2265;
     cursor: pointer;
 }.coluna a:hover{
     transition: all .3s ease;
@@ -126,7 +146,7 @@ body{
 
 .coluna-contato{
 	width: 28%;
-	border: 3px solid #928B10;
+	border: 3px solid #471E5B;
 	margin: 11% 2%;
 	float: left;
 	text-align: center;
@@ -134,8 +154,8 @@ body{
 	box-shadow: 0px 0px 5px;
 }
 .coluna-contato p{
-	font-size: 16pt;
-	color: #5F5C27;
+	font-size: 14pt;
+	color: #3C2265;
 }
 form p {
 	font-weight: 900;
@@ -149,7 +169,7 @@ form p {
 }
 .form-column input{
 	background: none;
-	border-color: #464308;
+	border-color: #241E4E;
 }
 
 fieldset{
@@ -197,13 +217,13 @@ fieldset{
 	display: inline-block;
 	width: 11px;
 	height: 11px;
-	border: 1px solid #464308;
+	border: 1px solid #241E4E;
 	border-radius: 50%;
 }
 .radio-btn input:checked + label:before {
 	transition: all .25s ease;
-	border: 1px solid #464308;
-	background: #464308;
+	border: 1px solid #241E4E;
+	background: #241E4E;
 }
 .check-btn label{
 	display: inline-block;
@@ -216,14 +236,14 @@ fieldset{
 	display: inline-block;
 	width: 11px;
 	height: 11px;
-	border: 1px solid #464308;
+	border: 1px solid #241E4E;
 	border-radius: 2px;
 	transition: all .12s, border-color .08s;
 }
 .check-btn input:checked + label:before {
 	width: 5px;
 	height: 9px;
-	border: 2px solid #464308;
+	border: 2px solid #241E4E;
 	border-top-color: transparent;
 	border-left-color: transparent;
 	transform: rotate(45deg);
@@ -239,8 +259,8 @@ fieldset{
 	margin-left: 8px;
 	padding: 12px 20px;
 	border-radius: 4px;
-	border: 1px solid #464308;
-    color: #464308;
+	border: 1px solid #241E4E;
+    color: #241E4E;
     cursor: pointer;
 }
 
@@ -248,6 +268,7 @@ fieldset{
 	width: auto;
 	height: 50px;
 	padding-top: 30px;
+	margin-bottom: 30px;
 	background: rgba(0,200,0,.1);
 	color: green;
 	border-radius: 5px;
@@ -262,6 +283,7 @@ fieldset{
 	width: auto;
 	height: 50px;
 	padding-top: 30px;
+	margin-bottom: 30px;
 	border-radius: 5px;
 	text-align: center;
 }
@@ -272,21 +294,25 @@ fieldset{
 	border-radius: 4px;
     color: white;
     cursor: pointer;
-    background-color: #006622;
+    background-color: #241E4E;
     border: none;
-    float: right;
-    margin: -40px 10px 40px 0;
+    left: 90%;
+    position: relative;
 }#enviar:hover{
     transition: all .3s ease;
-    background-color: #009933;
+    background-color: #632581;
     color: white;
 }#enviar:active{
-    background-color: #0e64;
+    background-color: #A78DB4;
 }
 
 footer{
-	padding: 1% 0;
-	background-color: #081106;
+	padding: 1% 4%;
+	margin-top: 5px;
+	background-color: #0D0B1C;
 	text-align: right;
-
 }
+
+#632581
+#A78DB4
+#241E4E
