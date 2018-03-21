@@ -1,13 +1,13 @@
-$(".scrollSuave").click(function(){        
-	$('html,body').animate({
-		scrollTop:$(this.hash).offset().top}, 1000);
-});
-
 function initMap() {
 	var uluru = {lat: -19.9968833, lng: -44.0079496},
 	map = new google.maps.Map(document.getElementById('map'), {zoom: 17, center: uluru}),
 	marker = new google.maps.Marker({position: uluru,map: map});
 }
+
+$(".scrollSuave").click(function(){        
+	$('html,body').animate({
+		scrollTop:$(this.hash).offset().top}, 1000);
+});
 
 function boxTop(idBox) {
   var boxOffset = $(idBox).offset().top;
@@ -21,9 +21,9 @@ $(document).ready(function() {
       offset = windowHeight - (windowHeight / 4);
 
   function animeScroll() {
-    var documentTop = $(document).scrollTop();
+    var topo = $(document).scrollTop();
     $target.each(function() {
-      if (documentTop > boxTop(this) - offset) {
+      if (topo > boxTop(this) - offset) {
         $(this).addClass(animationClass);
       } else {
         $(this).removeClass(animationClass);
@@ -52,6 +52,18 @@ $("#recic").click(function(){
 	$("#texto").text("Esses itens só podem ser concedidos aos motofretistas e mototaxistas após a frequência ao curso obrigatório regulamentado por norma do Departamento Nacional de Trânsito (Denatran).");
 	$("#texto").show(1000);
 });
+
+$('.entrada').keydown(function() {
+	$(this).css("font-style", "normal")
+});
+
+var input = document.getElementById('file'),
+fileName = document.getElementById('resposta');
+
+input.addEventListener('change', function(){
+	fileName.textContent = this.value;
+});
+
 function borda(){
 	var x = document.getElementsByClassName('entrada'),
 	msg = document.getElementById('msgFinal'),
@@ -72,21 +84,6 @@ function borda(){
 			$(msg).text('Dados enviados!');
 			$(msg).removeClass('msgFailure');
 			$(msg).addClass('msgSuccess');
-
-
-
 		}
 	}
 }
-
-$('.entrada').keydown(function() {
-	$(this).css("font-style", "normal")
-});
-
-var input = document.getElementById('file'),
-fileName = document.getElementById('resposta');
-
-input.addEventListener('change', function(){
-	fileName.textContent = this.value;
-});
-

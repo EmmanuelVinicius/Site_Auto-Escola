@@ -72,9 +72,9 @@ body{
 }
 
 #menu {
-	padding: 3px 20px;
+	padding: 3px 0;
 	display: block;
-	margin-left: 37%;
+	width: 100%;
 	position: fixed;
 	top: 0;
 	z-index: 9;
@@ -83,8 +83,8 @@ body{
 
 #menu a{
 	text-decoration: none;
-	padding: 3px 20px;
-	border-radius: 4px;
+	padding: 12px 40px;
+	border-radius: 6px;
     background-color: #222B65;
     color: #fffff6;
     transition: all .3s ease;
@@ -92,7 +92,7 @@ body{
 
 }#menu a:hover{
     background-color: #471E5B;
-	padding: 12px 20px;
+	padding: 21px 40px;
     color: white;
 	z-index: 9;
 }#menu a:active{
