@@ -127,10 +127,10 @@ body{
     cursor: pointer;
 }.coluna a:hover{
     transition: all .3s ease;
-    background-color: rgba(70,67,8,.2);
+    background-color: rgba(36,30,78,.2);
     color: white;
 }.coluna a:active{
-    background-color: rgba(70,67,8,.4);
+    background-color: rgba(36,30,78,.4);
 }
 
 #map {
