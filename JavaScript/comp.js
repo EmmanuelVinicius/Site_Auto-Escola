@@ -57,13 +57,6 @@ $('.entrada').keydown(function() {
 	$(this).css("font-style", "normal")
 });
 
-var input = document.getElementById('file'),
-fileName = document.getElementById('resposta');
-
-input.addEventListener('change', function(){
-	fileName.textContent = this.value;
-});
-
 function borda(){
 	var x = document.getElementsByClassName('entrada'),
 	msg = document.getElementById('msgFinal'),
