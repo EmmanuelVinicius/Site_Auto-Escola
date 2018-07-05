@@ -4,6 +4,36 @@ function initMap() {
 		marker = new google.maps.Marker({ position: uluru, map: map });
 }
 
+
+var slideIndex = 0;
+showSlides();
+
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+	var i;
+	var slides = document.getElementsByClassName("mySlides");
+	var circulos = document.getElementsByClassName("circ");
+	for (i = 0; i < slides.length; i++) {
+		slides[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > slides.length) { 
+		slideIndex = 1
+	}
+	for (i = 0; i < circulos.length; i++) {
+		circulos[i].className = circulos[i].className.replace(" active", "");
+	}
+	slides[slideIndex - 1].style.display = "block";
+	circulos[slideIndex - 1].className += " active";
+	setTimeout(showSlides, 2000);
+}
+
+
+
+
+
 $(".scrollSuave").click(function () {
 	$('html,body').animate({
 		scrollTop: $(this.hash).offset().top
@@ -30,7 +60,6 @@ function animeScroll() {
 		}
 	});
 }
-animeScroll();
 
 $(document).scroll(function () {
 	animeScroll();
@@ -60,7 +89,7 @@ function borda() {
 	var x = document.getElementsByClassName('entrada'),
 		msg = document.getElementById('msgFinal'),
 		count = 0;
-	for (var i = x.length - 1; i >= 0; i--) {
+	for (var i = 0; i <= x.length; i++) {
 		if (x[i].value == '') {
 			x[i].style.borderColor = 'red';
 			count++;
@@ -69,7 +98,7 @@ function borda() {
 		}
 
 		if (count != 0) {
-			$(msg).text('Envie os dados corretamente!');
+			$(msg).text('Preencha todos os campos!');
 			$(msg).removeClass('msgSuccess');
 			$(msg).addClass('msgFailure');
 		} else {
