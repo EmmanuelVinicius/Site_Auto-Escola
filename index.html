@@ -3,63 +3,14 @@
 
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<title>CFC Triunfo</title>
 	<link rel="shortcut icon" href="Imagens/Sedan-64.png" type="image/x-icon">
 	<link rel="stylesheet" href="CSS/folha.css">
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 </head>
 
 <body>
-
-
-
-
-
-
-
-
-
-
-
-	<div id="container">
-		<div class="mySlides fade">
-			<img src="Imagens/imag1.jpg" style="width:100%">
-		</div>
-
-		<div class="mySlides fade">
-			<img src="Imagens/imag2.jpg" style="width:100%">
-		</div>
-
-		<div class="mySlides fade">
-			<img src="Imagens/imag3.jpg" style="width:100%">
-		</div>
-
-	</div>
-	<br>
-
-	<div style="text-align:center">
-		<span class="circ"></span>
-		<span class="circ"></span>
-		<span class="circ"></span>
-	</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	<!--<div id="fundo"></div>-->
+	<div id="fundo"></div>
 	<div id="tudo">
 		<header id="cima">
 			<nav id="menu">
@@ -68,6 +19,7 @@
 				<a href="#mapa" class="scrollSuave"> Onde estamos </a>
 				<a href="#row-contato" class="scrollSuave"> Contatos </a>
 				<a href="#form-row" class="scrollSuave"> Mensagem Online</a>
+
 			</nav>
 		</header>
 		<div class="texto">
@@ -99,12 +51,12 @@
 		</div>
 		<div id="row">
 			<br>
-			<p class="titulo">Serviços</p>
+			<h1 class="titulo">Serviços</h1>
 			<div class="anime">
 				<div class="coluna">
 					<h3>Primeira Habilitação</h3>
 					<p>O interessado em obter a primeira habilitação, ou seja, a Permissão para Dirigir (PPD), deve ser aprovado em exames
-						de aptidão física e mental, conhecimento de legislação de trânsito e exame prático de direção veicular. </p>
+					de aptidão física e mental, conhecimento de legislação de trânsito e exame prático de direção veicular. </p>
 					<br>
 					<a id="primH">Saiba mais...</a>
 				</div>
@@ -114,7 +66,7 @@
 					<h3>Inclusão de Categoria</h3>
 					<p>Para adicionar categoria em sua Carteira Nacional de Habilitação (CNH), o condutor deverá emitir o documento de arrecadação
 						estadual (DAE) e realizar o exame médico. As taxas dos exames médico e psicotécnico (quando for necessário este exame),
-						devem ser pagas na clínica, em dinheiro, no dia do exame.</p>
+					devem ser pagas na clínica, em dinheiro, no dia do exame.</p>
 					<br>
 					<a id="incC">Saiba mais...</a>
 				</div>
@@ -131,80 +83,83 @@
 				</div>
 			</div>
 		</div>
+		<div id="texto"></div>
 		<div id="mapa">
 			<br>
-			<p class="titulo">Onde Estamos</p>
-			<p style="text-align: center" class="anime">R. Barão de Monte Alto, 29 - Cardoso, Belo Horizonte - MG, 30624-480</p>
-			<div id="map"></div>
-		</div>
-		<div id="row-contato">
-			<br>
-			<p class="titulo">Contatos</p>
-			<div class="anime">
-				<div class="coluna-contato">
-					<img src="Imagens/telefone.png" alt="Ícone de Telefone">
-					<p>
-						<b>(31) 3381-4411</b>
-					</p>
+			<h1 class="titulo">Onde Estamos</h1>
+			<p style="text-align: center" class="anime">R. Barão de Monte Alto, 29 - Cardoso, Belo Horizonte - MG, 30624-480</h1>
+				<div id="map"></div>
+			</div>
+			<div id="row-contato">
+				<br>
+				<h1 class="titulo">Contatos</h1>
+				<div class="anime">
+					<div class="coluna-contato">
+						<img src="Imagens/telefone.png" alt="Ícone de Telefone">
+						<p>
+							<b>(31) 3381-4411</b>
+						</p>
+					</div>
+				</div>
+				<div class="anime">
+					<div class="coluna-contato">
+						<img src="Imagens/celular.png" alt="Ícone de Celular">
+						<p>
+							<b>(31) 99134-3374</b>
+						</p>
+					</div>
+				</div>
+				<div class="anime">
+					<div class="coluna-contato">
+						<img src="Imagens/email.png" alt="Ícone de E-mail">
+						<p>
+							<b>autoescolatriunfo@gmail.com.br</b>
+						</p>
+					</div>
 				</div>
 			</div>
-			<div class="anime">
-				<div class="coluna-contato">
-					<img src="Imagens/celular.png" alt="Ícone de Celular">
-					<p>
-						<b>(31) 99134-3374</b>
-					</p>
-				</div>
-			</div>
-			<div class="anime">
-				<div class="coluna-contato">
-					<img src="Imagens/email.png" alt="Ícone de E-mail">
-					<p>
-						<b>autoescolatriunfo@gmail.com.br</b>
-					</p>
-				</div>
-			</div>
-		</div>
-		<div id="form-row">
-			<br>
-			<p class="titulo">Mensagem Online</p>
-			<form action="" target="_self" method="post" class="anime" mailto:>
-				<fieldset>
-					<div class="form-column">
-						<p>Nome:</p>
-						<input class="entrada" type="text" placeholder="José">
-						<p>Sobrenome:</p>
-						<input class="entrada" type="text" placeholder="Da Silva">
-						<p>Email:</p>
-						<input class="entrada" type="email" placeholder="nome@exemplo.com ">
-						<div id="double">
-							<div id="tel">
-								<p>Celular:</p>
-								<input class="entrada" type="tel" max="13" placeholder="(99) 99999-9999">
-							</div>
-							<div id="age">
-								<p>Idade:</p>
-								<input class="entrada" type="number" min="16" placeholder="99">
+			<div id="form-row">
+				<br>
+				<h1 class="titulo">Mensagem Online</h1>
+				<form action="" target="_self" method="post" class="anime" mailto:>
+					<fieldset>
+						<div class="form-column">
+							<p>Nome:</p>
+							<input class="entrada" type="text" placeholder="José">
+							<p>Sobrenome:</p>
+							<input class="entrada" type="text" placeholder="Da Silva">
+							<p>Email:</p>
+							<input class="entrada" type="email" placeholder="nome@exemplo.com ">
+							<div id="double">
+								<div id="tel">
+									<p>Celular:</p>
+									<input class="entrada" type="tel" max="13" placeholder="(99) 99999-9999">
+								</div>
+								<div id="age">
+									<p>Idade:</p>
+									<input class="entrada" type="number" min="16" placeholder="99">
+								</div>
 							</div>
 						</div>
-					</div>
-					<div class="form-column">
-						<p>Mensagem:</p>
-						<textarea name="mensag" class="entrada"></textarea>
-					</div>
-					<span id="resposta"></span>
-				</fieldset>
-			</form>
-			<span id="msgFinal"></span>
-			<button id="enviar" onclick="borda()">Enviar</button>
+						<div class="form-column">
+							<p>Mensagem:</p>
+							<textarea name="mensag" class="entrada"></textarea>
+						</div>
+						<span id="resposta"></span>
+					</fieldset>
+				</form>
+				<span id="msgFinal"></span>
+				<button id="enviar" onclick="borda()">Enviar</button>
+			</div>
+			<footer>
+				<p>COPYRIGHT © Auto Escola TRIUNFO Ltda. TODOS OS DIREITOS RESERVADOS</p>
+			</footer>
 		</div>
-		<footer>
-			<p>COPYRIGHT © Auto Escola TRIUNFO Ltda. TODOS OS DIREITOS RESERVADOS</p>
-		</footer>
-	</div>
 	</div>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDnJ572zXYZA_S_pUJADd1mtrGXOvv6mKA&callback=initMap">
 	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 	<script type="text/javascript" src="JavaScript/comp.js"></script>
 </body>
 

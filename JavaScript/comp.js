@@ -5,35 +5,6 @@ function initMap() {
 }
 
 
-var slideIndex = 0;
-showSlides();
-
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-	var i;
-	var slides = document.getElementsByClassName("mySlides");
-	var circulos = document.getElementsByClassName("circ");
-	for (i = 0; i < slides.length; i++) {
-		slides[i].style.display = "none";
-	}
-	slideIndex++;
-	if (slideIndex > slides.length) { 
-		slideIndex = 1
-	}
-	for (i = 0; i < circulos.length; i++) {
-		circulos[i].className = circulos[i].className.replace(" active", "");
-	}
-	slides[slideIndex - 1].style.display = "block";
-	circulos[slideIndex - 1].className += " active";
-	setTimeout(showSlides, 2000);
-}
-
-
-
-
-
 $(".scrollSuave").click(function () {
 	$('html,body').animate({
 		scrollTop: $(this.hash).offset().top
