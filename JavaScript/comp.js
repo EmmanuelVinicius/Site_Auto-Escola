@@ -1,5 +1,5 @@
-function initMap() {
-	var uluru = { lat: -19.9968833, lng: -44.0079496 },
+﻿function initMap() {
+	var uluru = { lat: -19.9968782, lng: -44.0090332 },
 	map = new google.maps.Map(document.getElementById('map'), { zoom: 17, center: uluru }),
 	marker = new google.maps.Marker({ position: uluru, map: map });
 }
@@ -44,7 +44,7 @@ $("#primH").click(function () {
 		});
 	}
 	$("#texto").hide("fast");
-	$("#texto").text(" Os pré-requisitos necessários para iniciar o processo de obtenção da Permissão para Dirigir (PPD), são:\n 	-	Ser penalmente imputável (ter 18 anos completos);\n	-	Saber ler e escrever;\n	-	Possuir documento de identidade ou equivalente; \n	-	Possuir Cadastro de Pessoa Física (CPF); \n	-	Possuir comprovante de residência. \n");
+	$("#texto").html(" Os pré-requisitos necessários para iniciar o processo de obtenção da Permissão para Dirigir (PPD), são:<br> 	-	Ser penalmente imputável (ter 18 anos completos);<br>	-	Saber ler e escrever;<br>	-	Possuir documento de identidade ou equivalente; <br>	-	Possuir Cadastro de Pessoa Física (CPF); <br>	-	Possuir comprovante de residência. <br>");
 	$("#texto").show(1000);
 });
 $("#incC").click(function () {
@@ -55,7 +55,7 @@ $("#incC").click(function () {
 		});
 	}
 	$("#texto").hide("fast");
-	$("#texto").text("O condutor deverá fazer a solicitação pelo Centro de formação de Condutores (CFC) ou nas unidades de atendimento. Após os procedimentos, o condutor deverá ");
+	$("#texto").html("O condutor deverá fazer a solicitação pelo Centro de formação de Condutores (CFC) ou nas unidades de atendimento. Após os procedimentos, o condutor deverá ");
 	$("#texto").show(1000);
 });
 $("#recic").click(function () {
@@ -66,7 +66,7 @@ $("#recic").click(function () {
 		});
 	}
 	$("#texto").hide("fast");
-	$("#texto").text("Esses itens só podem ser concedidos aos motofretistas e mototaxistas após a frequência ao curso obrigatório regulamentado por norma do Departamento Nacional de Trânsito (Denatran).");
+	$("#texto").html("Esses itens só podem ser concedidos aos motofretistas e mototaxistas após a frequência ao curso obrigatório regulamentado por norma do Departamento Nacional de Trânsito (Denatran).");
 	$("#texto").show(1000);
 });
 
